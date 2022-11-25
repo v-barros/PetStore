@@ -1,0 +1,20 @@
+pipeline {
+    agent any
+    stages {
+        stage("Build Maven") {
+            steps {
+                sh 'mvn -B clean package'
+            }
+        }
+        stage("Run Executor 1") {
+            steps {
+                sh 'mvn gatling:test -Dgatling.simulationClass=scala.simulation.PetStoreExecutor1'
+            }
+            post {
+                always {
+                    gatlingArchive()
+                }
+            }
+        }
+    }
+}

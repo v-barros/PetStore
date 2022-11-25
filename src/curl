@@ -1,0 +1,40 @@
+curl 'https://petstore.octoperf.com/actions/Account.action?newAccountForm='
+-H 'User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0'
+-H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8'
+-H 'Accept-Language: en-US,en;q=0.5'
+-H 'Accept-Encoding: gzip, deflate, br'
+-H 'Connection: keep-alive'
+-H 'Referer: https://petstore.octoperf.com/actions/Account.action?signonForm='
+-H 'Cookie: JSESSIONID=678B6AF45E59BB5B50810B41A1B3C964'
+-H 'Upgrade-Insecure-Requests: 1'
+-H 'Sec-Fetch-Dest: document'
+-H 'Sec-Fetch-Mode: navigate'
+-H 'Sec-Fetch-Site: same-origin'
+-H 'Sec-Fetch-User: ?1'
+-H 'Pragma: no-cache'
+-H 'Cache-Control: no-cache'
+-H 'TE: trailers'
+
+curl 'https://petstore.octoperf.com/actions/Account.action' \
+  -H 'authority: petstore.octoperf.com' \
+  -H 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8' \
+  -H 'accept-language: en-US,en;q=0.6' \
+  -H 'cache-control: max-age=0' \
+  -H 'content-type: application/x-www-form-urlencoded' \
+  -H 'cookie: JSESSIONID=0B48528AFD015647A7A3DC08EA3A313B' \
+  -H 'origin: https://petstore.octoperf.com' \
+  -H 'referer: https://petstore.octoperf.com/actions/Account.action?newAccountForm=' \
+  -H 'sec-ch-ua: "Brave";v="107", "Chromium";v="107", "Not=A?Brand";v="24"' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  -H 'sec-fetch-dest: document' \
+  -H 'sec-fetch-mode: navigate' \
+  -H 'sec-fetch-site: same-origin' \
+  -H 'sec-fetch-user: ?1' \
+  -H 'sec-gpc: 1' \
+  -H 'upgrade-insecure-requests: 1' \
+  -H 'user-agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Mobile Safari/537.36' \
+  --data-raw 'username=test1111111111111&password=123456&repeatedPassword=132456&account.firstName=vinicius&account.lastName=test&account.email=test%40test.com&account.phone=112233445566&account.address1=test+street&account.address2=test+avenue&account.city=test+city&account.state=test+state&account.zip=123456&account.country=Testland&account.languagePreference=english&account.favouriteCategoryId=FISH&account.listOption=true&account.bannerOption=true&newAccount=Save+Account+Information&_sourcePage=lWaOQBmeBWHq152ZHLiyAR4OVvM1xCgxyXWY2xK9AKx385Ehz7zpEOoIYGCRDkFef1wbUmYXRb3_yiHsT2_9gFhopwtmu4_CWAJPgsNyWU4%3D&__fp=y9OgyYvTbYkRmi0zRHQCVIBqq_WBQlJe7bEuHNvYuPcCjhlZvhkzMVDvHy4ZStmy8doNSeor0Rv9zx6McFmfbINEaLss7arYK3GnFVoaj0nKmGJFpJF7hxl9kKspcYVgNxDb4tfOAJ8jvTPVTmclWuaCGXBkxshZ5iKpo2J7KkC1m9Qft-Hy9_w32-Wgs8EZ' \
+  --compressed
+
+  curl 'https://petstore.octoperf.com/actions/Account.action' -X POST -H 'User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0' -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8' -H 'Accept-Language: en-US,en;q=0.5' -H 'Accept-Encoding: gzip, deflate, br' -H 'Content-Type: application/x-www-form-urlencoded' -H 'Origin: https://petstore.octoperf.com' -H 'Connection: keep-alive' -H 'Referer: https://petstore.octoperf.com/actions/Account.action;jsessionid=E946BE8B9C20CF2122CF724F08C4AF68?signonForm=' -H 'Cookie: JSESSIONID=E946BE8B9C20CF2122CF724F08C4AF68' -H 'Upgrade-Insecure-Requests: 1' -H 'Sec-Fetch-Dest: document' -H 'Sec-Fetch-Mode: navigate' -H 'Sec-Fetch-Site: same-origin' -H 'Sec-Fetch-User: ?1' -H 'Pragma: no-cache' -H 'Cache-Control: no-cache' -H 'TE: trailers' --data-raw 'username=r15i4YUkzE&password=123456&signon=Login&_sourcePage=oWJNxuJfvHdxiTFr-K5vFH8fU7j_UtDLJjM1XjVX-lJv8B6gxnBOSEFpajcpMjSUY6SIt-mVeDSLc3TXKR0pkSIyL4hBFAeUA_dW6IzJgfg%3D&__fp=kY0vPAHSfE98ZBoksomY4jrtv580vh6-5a3bkdVJFcw6gWIDOFWEwlfuSj6vKpst'

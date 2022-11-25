@@ -8,7 +8,7 @@ pipeline {
         }
         stage("Run Executor 1") {
             steps {
-                sh 'mvn gatling:test -Dgatling.simulationClass=scala.simulation.PetStoreExecutor1'
+                sh 'mvn gatling:test -Dgatling.simulationClass=scala.simulations.PetStoreExecutor1'
             }
             post {
                 always {

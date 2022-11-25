@@ -10,7 +10,7 @@
 
 	<!-- uncomment and set to DEBUG to log all failing HTTP requests -->
 	<!-- uncomment and set to TRACE to log all HTTP requests -->
-	<logger name="io.gatling.http.engine.response" level="INFO" />
+	<logger name="io.gatling.http.engine.response" level="DEBUG" />
 
 	<!-- uncomment to log WebSocket events -->
     <!--<logger name="io.gatling.http.action.ws.fsm" level="DEBUG" />-->
@@ -18,7 +18,7 @@
 	<!-- uncomment to log SSE events -->
     <!--<logger name="io.gatling.http.action.sse.fsm" level="DEBUG" />-->
 
-	<root level="INFO">
+	<root level="DEBUG">
 		<appender-ref ref="CONSOLE" />
 	</root>
 
